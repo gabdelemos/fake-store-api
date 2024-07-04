@@ -5,7 +5,8 @@ Este projeto implementa um pipeline de dados (Extração, Transformação e Carg
 ## Estrutura do Projeto
 
 - `script_etl_fake-store.py`: Script principal que contém a implementação do pipeline ETL.
-- `user_cart_data.csv`: Arquivo CSV gerado contendo os dados transformados.
+- `user_cart_data.csv`: Arquivo CSV gerado contendo os dados transformados com as informações solicitadas.
+- `sugestao_melhorias_processo.pdf`: Documento com sugestões de melhorias no processo e na estratégia visando escalabilidade, otimização e melhor usabilidade dos dados.
 - `README.md`: Este arquivo de documentação.
 
 ## Detalhes do Pipeline
@@ -122,3 +123,13 @@ python script_etl_fake-store.py
 ```
 
 4. O arquivo user_cart_data.csv será gerado no diretório atual contendo os dados transformados.
+
+### Sugestão de melhoria no processo
+
+Para aprimorar o processo de ETL e fornecer uma solução mais robusta e escalável, foi criado um documento com algumas sugestões de melhorias que pode ser encontrado dentro deste repositório. Dentre as sugestões, estão: 
+
+- Otimização do código atual;
+- Armazenamento dos dados em um datalake 
+- Análise e Geração de resultados com SQL; 
+- Automização do processo, monitoramento e validação dos dados;
+- Integração dos dados com ferramentas de BI
