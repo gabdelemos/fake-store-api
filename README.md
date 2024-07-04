@@ -1,10 +1,6 @@
 # ETL de dados da API Fake Store
 
-Este projeto implementa um pipeline de dados (Extração, Transformação e Carga) utilizando a linguagem de programação Python e o paradigma de Programação Orientada a Objetos (POO). O objetivo é extrair dados da API Fake Store, transformá-los e carregá-los em um arquivo CSV. Além disso, os dados foram transformados para considerar as seguintes informações especificas para serem armazenadas no arquivo final: 
-
-- identificador de usuário;
-- data mais recente em que o usuário adicionou produtos ao carrinho;
-- categoria em que o usuário tem mais produtos adicionados ao carrinho.
+Este projeto implementa um pipeline de dados (Extração, Transformação e Carga) utilizando a linguagem de programação Python e o paradigma de Programação Orientada a Objetos (POO). O objetivo é extrair dados da API Fake Store, transformá-los e carregá-los em um arquivo CSV. Além disso, os dados foram transformados para considerar informações especificas para serem armazenadas no arquivo final descrita em mais detalhes abaixo. 
 
 ## Estrutura do Projeto
 
@@ -37,9 +33,10 @@ def extract(self):
 
 Na fase de transformação, processamos os dados para obter as seguintes informações:
 
-Identificador de usuário (user_id)
-Data mais recente em que o usuário adicionou produtos ao carrinho (last_added_date)
-Categoria em que o usuário tem mais produtos adicionados ao carrinho (top_category)
+- Identificador de usuário (user_id)
+- Data mais recente em que o usuário adicionou produtos ao carrinho (last_added_date)
+- Categoria em que o usuário tem mais produtos adicionados ao carrinho (top_category)
+
 Utilizamos um dicionário para acumular essas informações e, em seguida, transformamos os dados em um formato adequado para carregamento.
 
 ```python
