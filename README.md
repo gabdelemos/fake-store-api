@@ -102,3 +102,23 @@ if __name__ == "__main__":
     etl = ETLProcess(carts_url="https://fakestoreapi.com/carts", products_url="https://fakestoreapi.com/products")
     etl.run(output_file="user_cart_data.csv")
 ```
+
+### Requisitos
+- Python 3.x
+- Bibliotecas: requests, pandas
+
+### Instruções de Uso
+1. Clone este repositório.
+2. Instale as dependências necessárias:
+
+```bash
+pip install requests pandas
+```
+
+3. Execute o script: 
+
+```bash
+python script_etl_fake-store.ipynb
+```
+
+4. O arquivo user_cart_data.csv será gerado no diretório atual contendo os dados transformados.
