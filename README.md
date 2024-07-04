@@ -84,3 +84,24 @@ def transform(self):
     
     self.data = transformed_data
 ```    
+
+### Carga (Load)
+Na fase de carga, os dados transformados são salvos em um arquivo CSV utilizando a biblioteca pandas.
+
+```python
+def load(self, output_file):
+    if not self.data:
+        raise Exception("No data to load")
+    
+    df = pd.DataFrame(self.data)
+    df.to_csv(output_file, index=False)
+```    
+
+### Execução do Pipeline
+O pipeline é executado chamando o método run da classe ETLProcess, que realiza todas as etapas de ETL sequencialmente.
+
+```python
+if __name__ == "__main__":
+    etl = ETLProcess(carts_url="https://fakestoreapi.com/carts", products_url="https://fakestoreapi.com/products")
+    etl.run(output_file="user_cart_data.csv")
+```
