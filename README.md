@@ -4,7 +4,7 @@ Este projeto implementa um pipeline de dados (Extração, Transformação e Carg
 
 ## Estrutura do Projeto
 
-- `script_etl_fake-store.ipynb`: Script principal que contém a implementação do pipeline ETL.
+- `script_etl_fake-store.py`: Script principal que contém a implementação do pipeline ETL.
 - `user_cart_data.csv`: Arquivo CSV gerado contendo os dados transformados.
 - `README.md`: Este arquivo de documentação.
 
@@ -104,7 +104,7 @@ if __name__ == "__main__":
 ```
 
 ### Requisitos
-- Python 3.x
+- Python 3
 - Bibliotecas: requests, pandas
 
 ### Instruções de Uso
@@ -118,7 +118,7 @@ pip install requests pandas
 3. Execute o script: 
 
 ```bash
-python script_etl_fake-store.ipynb
+python script_etl_fake-store.py
 ```
 
 4. O arquivo user_cart_data.csv será gerado no diretório atual contendo os dados transformados.
