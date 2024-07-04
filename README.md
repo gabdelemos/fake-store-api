@@ -1,4 +1,4 @@
-# ETL Pipeline para Dados da API Fake Store
+# Extração dos dados da API Fake Store
 
 Este projeto implementa um pipeline de ETL (Extração, Transformação e Carga) utilizando a linguagem de programação Python. O objetivo é extrair dados da API Fake Store, transformá-los e carregá-los em um arquivo CSV.
 
