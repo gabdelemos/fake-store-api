@@ -31,6 +31,7 @@ def extract(self):
         self.product_data = product_response.json()
     else:
         raise Exception("Failed to fetch product data from API")
+```        
 
 ### Transformação (Transform)
 
@@ -82,3 +83,4 @@ def transform(self):
         })
     
     self.data = transformed_data
+```    
